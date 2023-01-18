@@ -14,6 +14,7 @@ https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-
 https://github.com/cerndb/SparkPlugins <br />
 https://github.com/lucacanali/sparkMeasure <br />
 https://github.com/LucaCanali/sparkMeasure/blob/master/examples/test_sparkmeasure_python.py <br />
+https://github.com/cerndb/SparkTraining/blob/master/notebooks/Demo_Spark_on_Hadoop.ipynb <br />
 
 troubleshouting <br />
 https://canali.web.cern.ch/ <br />
