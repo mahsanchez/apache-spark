@@ -12,6 +12,10 @@ https://github.com/apache/spark/blob/master/python/pyspark/context.py <br />
 https://www.py4j.org/ <br />
 https://www.youtube.com/watch?v=49Hr5xZyTEA <br />
 
+apache hadoop ansible scripts<br />
+https://github.com/pippozq/hadoop-ansible <br />
+https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
+
 monitoring <br />
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard <br />
 https://github.com/cerndb/SparkPlugins <br />
@@ -33,24 +37,17 @@ troubleshouting <br />
 https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics <br />
 https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.html <br />
 https://canali.web.cern.ch/ <br />
+https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame graphs <br />
 
-flame graphs <br />
-https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 <br />
+ha yarn configuration<br />
+
+yarn security<br />
+
+yarn fair scheduler<br />
 
 compiler <br />
 https://www.databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html <br />
 
-apache hadoop ansible scripts<br />
-https://github.com/pippozq/hadoop-ansible <br />
-
-
-ha yarn configuration<br />
-
-
-yarn security<br />
-
-
-yarn fair scheduler<br />
 
 
 
