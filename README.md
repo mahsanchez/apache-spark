@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=49Hr5xZyTEA
 
 monitoring
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard
+https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-monitoring-in-spark-30
 
 
 apache hadoop ansible scripts
