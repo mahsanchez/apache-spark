@@ -10,6 +10,7 @@ https://www.youtube.com/watch?v=49Hr5xZyTEA <br />
 
 monitoring <br />
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard <br />
+https://canali.web.cern.ch/docs/WhatsNew_Spark3_Performance_Monitoring_DataAI_Summit_EU_Nov2020_LC.pdf <br />
 https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-monitoring-in-spark-30 <br />
 https://github.com/cerndb/SparkPlugins <br />
 https://github.com/lucacanali/sparkMeasure <br />
