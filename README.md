@@ -1,7 +1,7 @@
 # apache-spark
-apache spark notes 
+apache spark notes <br />
 
-PySpark Internals
+PySpark Internals<br />
 https://medium.com/@ketanvatsalya/a-scenic-route-through-pyspark-internals-feaf74ed660d <br />
 https://cwiki.apache.org/confluence/display/SPARK/PySpark+Internals <br />
 https://cwiki.apache.org/confluence/display/SPARK/Spark+Internals <br />
@@ -14,16 +14,16 @@ https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-
 https://github.com/cerndb/SparkPlugins <br />
 
 
-apache hadoop ansible scripts
+apache hadoop ansible scripts<br />
 
 
-ha yarn configuration
+ha yarn configuration<br />
 
 
-yarn security
+yarn security<br />
 
 
-yarn fair scheduler
+yarn fair scheduler<br />
 
 
 
