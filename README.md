@@ -9,6 +9,15 @@ https://github.com/apache/spark/blob/master/python/pyspark/context.py
 https://www.youtube.com/watch?v=49Hr5xZyTEA
 
 monitoring
+https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard
+
+
 apache hadoop ansible scripts
+
+
 ha yarn configuration
+
+
 yarn fair scheduler
+
+
