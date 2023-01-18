@@ -12,6 +12,7 @@ monitoring <br />
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard <br />
 https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-monitoring-in-spark-30 <br />
 https://github.com/cerndb/SparkPlugins <br />
+https://github.com/lucacanali/sparkMeasure <br />
 
 troubleshouting <br />
 https://canali.web.cern.ch/ <br />
