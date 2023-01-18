@@ -23,6 +23,7 @@ https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-work
 
 Making Sense of Spark Performance - Kay Ousterhout (UC Berkeley) <br />
 https://www.youtube.com/watch?v=mBk4tt7AEHU <br />
+http://kayousterhout.org/ <br />
 
 troubleshouting <br />
 https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics <br />
