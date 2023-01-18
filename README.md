@@ -22,8 +22,9 @@ monitoring <br />
 https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-workload-metrics-performance-troubleshooting
 
 troubleshouting <br />
-https://canali.web.cern.ch/ <br />
 https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics <br />
+https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.html <br />
+https://canali.web.cern.ch/ <br />
 
 apache hadoop ansible scripts<br />
 
