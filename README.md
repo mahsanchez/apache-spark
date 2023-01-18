@@ -41,6 +41,7 @@ compiler <br />
 https://www.databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html <br />
 
 apache hadoop ansible scripts<br />
+https://github.com/pippozq/hadoop-ansible <br />
 
 
 ha yarn configuration<br />
