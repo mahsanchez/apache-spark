@@ -2,11 +2,11 @@
 apache spark notes 
 
 PySpark Internals
-https://medium.com/@ketanvatsalya/a-scenic-route-through-pyspark-internals-feaf74ed660d__
-https://cwiki.apache.org/confluence/display/SPARK/PySpark+Internals__
-https://cwiki.apache.org/confluence/display/SPARK/Spark+Internals__
-https://github.com/apache/spark/blob/master/python/pyspark/context.py__
-https://www.youtube.com/watch?v=49Hr5xZyTEA__
+https://medium.com/@ketanvatsalya/a-scenic-route-through-pyspark-internals-feaf74ed660d <br />
+https://cwiki.apache.org/confluence/display/SPARK/PySpark+Internals <br />
+https://cwiki.apache.org/confluence/display/SPARK/Spark+Internals <br />
+https://github.com/apache/spark/blob/master/python/pyspark/context.py <br />
+https://www.youtube.com/watch?v=49Hr5xZyTEA <br />
 
 monitoring <br />
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard <br />
