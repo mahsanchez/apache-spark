@@ -18,6 +18,10 @@ apache hadoop ansible scripts
 ha yarn configuration
 
 
+yarn security
+
+
 yarn fair scheduler
+
 
 
