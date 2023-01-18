@@ -26,6 +26,9 @@ https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache
 https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.html <br />
 https://canali.web.cern.ch/ <br />
 
+compiler <br />
+https://www.databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html <br />
+
 apache hadoop ansible scripts<br />
 
 
