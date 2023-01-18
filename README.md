@@ -19,6 +19,7 @@ https://github.com/cerndb/SparkTraining/blob/master/notebooks/Demo_Spark_on_Hado
 
 troubleshouting <br />
 https://canali.web.cern.ch/ <br />
+https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics <br />
 
 apache hadoop ansible scripts<br />
 
