@@ -45,14 +45,6 @@ https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame gra
 
 collectdb integration with influxdb <br />
 https://elatov.github.io/2013/02/monitor-different-systems-with-collectd/ <br />
-https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd <br />
-https://collectd.org/wiki/index.php/Main_Page <br />
-https://anomaly.io/collectd-metrics-to-influxdb/index.html <br />
-https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd <br />
-https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/ <br />
-https://github.com/collectd/collectd <br />
-https://anomaly.io/collectd-metrics-to-influxdb/index.html <br />
-https://collectd.org/wiki/index.php/Main_Page <br />
 
 
 apache hadoop ansible scripts<br />
