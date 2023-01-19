@@ -42,6 +42,20 @@ https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.htm
 https://canali.web.cern.ch/ <br />
 https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame graphs <br />
 
+collectd
+https://github.com/collectd/collectd
+https://elatov.github.io/2013/02/monitor-different-systems-with-collectd/
+https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd
+https://collectd.org/wiki/index.php/Main_Page
+https://anomaly.io/collectd-metrics-to-influxdb/index.html
+https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd
+https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/
+https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/
+https://github.com/collectd/collectd
+https://anomaly.io/collectd-metrics-to-influxdb/index.html
+https://collectd.org/wiki/index.php/Main_Page
+
+
 apache hadoop ansible scripts<br />
 https://github.com/pippozq/hadoop-ansible <br />
 https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
