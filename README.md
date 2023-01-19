@@ -9,6 +9,7 @@ https://medium.com/@ketanvatsalya/a-scenic-route-through-pyspark-internals-feaf7
 https://cwiki.apache.org/confluence/display/SPARK/PySpark+Internals <br />
 https://cwiki.apache.org/confluence/display/SPARK/Spark+Internals <br />
 https://github.com/apache/spark/blob/master/python/pyspark/context.py <br />
+https://github.com/apache/spark/blob/master/python/pyspark/worker.py <br />
 https://www.py4j.org/ <br />
 https://www.youtube.com/watch?v=49Hr5xZyTEA <br />
 
