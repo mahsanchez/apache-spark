@@ -25,6 +25,7 @@ https://canali.web.cern.ch/docs/WhatsNew_Spark3_Performance_Monitoring_DataAI_Su
 https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-monitoring-in-spark-30 <br />
 https://github.com/cerndb/SparkTraining/blob/master/notebooks/Demo_Spark_on_Hadoop.ipynb <br />
 https://github.com/apache/spark/pull/31367 <br />
+collectdb integration with influxdb <br />
 
 monitoring <br />
 https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-workload-metrics-performance-troubleshooting <br />
