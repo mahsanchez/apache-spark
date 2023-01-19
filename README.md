@@ -26,6 +26,7 @@ https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-
 https://github.com/cerndb/SparkTraining/blob/master/notebooks/Demo_Spark_on_Hadoop.ipynb <br />
 https://github.com/apache/spark/pull/31367 <br />
 https://docs.python.org/3.5/library/resource.html <br />
+https://stackoverflow.com/questions/43294153/spark-pyspark-how-to-monitor-python-worker-processes <br />
 
 monitoring <br />
 https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-workload-metrics-performance-troubleshooting <br />
