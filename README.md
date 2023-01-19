@@ -39,7 +39,7 @@ apache hadoop ansible scripts<br />
 https://github.com/pippozq/hadoop-ansible <br />
 https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
 
-ha yarn configuration<br />
+yarn ha configuration<br />
 https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/ResourceManagerHA.html
 
 yarn resources partition 
