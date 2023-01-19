@@ -25,7 +25,6 @@ https://canali.web.cern.ch/docs/WhatsNew_Spark3_Performance_Monitoring_DataAI_Su
 https://www.slideshare.net/databricks/what-is-new-with-apache-spark-performance-monitoring-in-spark-30 <br />
 https://github.com/cerndb/SparkTraining/blob/master/notebooks/Demo_Spark_on_Hadoop.ipynb <br />
 https://github.com/apache/spark/pull/31367 <br />
-collectdb integration with influxdb <br />
 
 monitoring <br />
 https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-workload-metrics-performance-troubleshooting <br />
@@ -42,18 +41,16 @@ https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.htm
 https://canali.web.cern.ch/ <br />
 https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame graphs <br />
 
-collectd
-https://github.com/collectd/collectd
-https://elatov.github.io/2013/02/monitor-different-systems-with-collectd/
-https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd
-https://collectd.org/wiki/index.php/Main_Page
-https://anomaly.io/collectd-metrics-to-influxdb/index.html
-https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd
-https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/
-https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/
-https://github.com/collectd/collectd
-https://anomaly.io/collectd-metrics-to-influxdb/index.html
-https://collectd.org/wiki/index.php/Main_Page
+collectdb integration with influxdb <br />
+https://elatov.github.io/2013/02/monitor-different-systems-with-collectd/ <br />
+https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd <br />
+https://collectd.org/wiki/index.php/Main_Page <br />
+https://anomaly.io/collectd-metrics-to-influxdb/index.html <br />
+https://www.linux-magazine.com/Issues/2017/194/Tutorials-Collectd <br />
+https://docs.influxdata.com/influxdb/v1.8/supported_protocols/collectd/ <br />
+https://github.com/collectd/collectd <br />
+https://anomaly.io/collectd-metrics-to-influxdb/index.html <br />
+https://collectd.org/wiki/index.php/Main_Page <br />
 
 
 apache hadoop ansible scripts<br />
