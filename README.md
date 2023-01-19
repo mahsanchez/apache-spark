@@ -12,10 +12,6 @@ https://github.com/apache/spark/blob/master/python/pyspark/context.py <br />
 https://www.py4j.org/ <br />
 https://www.youtube.com/watch?v=49Hr5xZyTEA <br />
 
-apache hadoop ansible scripts<br />
-https://github.com/pippozq/hadoop-ansible <br />
-https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
-
 monitoring <br />
 https://github.com/LucaCanali/Miscellaneous/tree/master/Spark_Dashboard <br />
 https://github.com/cerndb/SparkPlugins <br />
@@ -39,11 +35,29 @@ https://externaltable.blogspot.com/2016/09/spark-20-performance-improvements.htm
 https://canali.web.cern.ch/ <br />
 https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame graphs <br />
 
+apache hadoop ansible scripts<br />
+https://github.com/pippozq/hadoop-ansible <br />
+https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
+
 ha yarn configuration<br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/ResourceManagerHA.html
+
+yarn resources partition 
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/NodeManagerCgroups.html
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/RuncContainers.html
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/UsingGpus.html
 
 yarn security<br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YarnApplicationSecurity.html
 
 yarn fair scheduler<br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/FairScheduler.html
+https://clouderatemp.wpengine.com/blog/2016/06/untangling-apache-hadoop-yarn-part-4-fair-scheduler-queue-basics/
+https://clouderatemp.wpengine.com/blog/2017/02/untangling-apache-hadoop-yarn-part-5-using-fairscheduler-queue-properties/
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
+https://blog.cloudera.com/yarn-capacity-scheduler/
+https://blog.cloudera.com/fine-tune-fair-to-capacity-scheduler-in-weight-mode/
+https://blog.cloudera.com/better-slas-via-resource-preemption-in-yarns-capacityscheduler/
 
 compiler <br />
 https://www.databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html <br />
