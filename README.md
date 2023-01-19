@@ -29,7 +29,7 @@ https://github.com/apache/spark/pull/31367 <br />
 monitoring <br />
 https://db-blog.web.cern.ch/blog/luca-canali/2017-03-measuring-apache-spark-workload-metrics-performance-troubleshooting <br />
 https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics  Flight Recorder 16:24 <br />
-https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics  InfluxDB 16:56 <br />
+https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics  InfluxDB Integration 16:56 <br />
 https://www.youtube.com/watch?v=JlPu6FgHb0o <br />
 
 Making Sense of Spark Performance - Kay Ousterhout (UC Berkeley) <br />
