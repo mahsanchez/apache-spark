@@ -46,6 +46,8 @@ https://gist.github.com/kayousterhout/7008a8ebf2babeedc7ce6f8723fd1bf4 flame gra
 collectdb integration with influxdb <br />
 https://elatov.github.io/2013/02/monitor-different-systems-with-collectd/ <br />
 
+apache hadoop + spark quick install <br />
+https://low-level.wiki/diverse/hadoop-setup.html<br />
 
 apache hadoop ansible scripts<br />
 https://github.com/pippozq/hadoop-ansible <br />
