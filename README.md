@@ -61,21 +61,21 @@ yarn ha configuration<br />
 https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/ResourceManagerHA.html
 
 yarn resources partition 
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/NodeManagerCgroups.html
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/RuncContainers.html
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/UsingGpus.html
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/NodeManagerCgroups.html  <br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/RuncContainers.html  <br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/UsingGpus.html  <br />
 
 yarn security<br />
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YarnApplicationSecurity.html
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/YarnApplicationSecurity.html <br />
 
 yarn fair scheduler<br />
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/FairScheduler.html
-https://clouderatemp.wpengine.com/blog/2016/06/untangling-apache-hadoop-yarn-part-4-fair-scheduler-queue-basics/
-https://clouderatemp.wpengine.com/blog/2017/02/untangling-apache-hadoop-yarn-part-5-using-fairscheduler-queue-properties/
-https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html
-https://blog.cloudera.com/yarn-capacity-scheduler/
-https://blog.cloudera.com/fine-tune-fair-to-capacity-scheduler-in-weight-mode/
-https://blog.cloudera.com/better-slas-via-resource-preemption-in-yarns-capacityscheduler/
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/FairScheduler.html <br />
+https://clouderatemp.wpengine.com/blog/2016/06/untangling-apache-hadoop-yarn-part-4-fair-scheduler-queue-basics/ <br />
+https://clouderatemp.wpengine.com/blog/2017/02/untangling-apache-hadoop-yarn-part-5-using-fairscheduler-queue-properties/ <br />
+https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/CapacityScheduler.html <br />
+https://blog.cloudera.com/yarn-capacity-scheduler/ <br />
+https://blog.cloudera.com/fine-tune-fair-to-capacity-scheduler-in-weight-mode/ <br />
+https://blog.cloudera.com/better-slas-via-resource-preemption-in-yarns-capacityscheduler/ <br />
 
 compiler <br />
 https://www.databricks.com/blog/2016/05/23/apache-spark-as-a-compiler-joining-a-billion-rows-per-second-on-a-laptop.html <br />
