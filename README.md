@@ -55,6 +55,7 @@ https://low-level.wiki/diverse/hadoop-setup.html<br />
 apache hadoop ansible scripts<br />
 https://github.com/pippozq/hadoop-ansible <br />
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04 <br />
+https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide <br />
 https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
 
 yarn ha configuration<br />
