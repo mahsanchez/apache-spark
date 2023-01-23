@@ -57,6 +57,8 @@ https://github.com/pippozq/hadoop-ansible <br />
 https://www.digitalocean.com/community/tutorials/how-to-install-and-configure-ansible-on-ubuntu-20-04 <br />
 https://www.digitalocean.com/community/cheatsheets/how-to-use-ansible-cheat-sheet-guide <br />
 https://www.softwaretestinghelp.com/ansible-roles-jenkins-integration-ec2-modules/ <br />
+https://docs.ansible.com/ansible/latest/network/user_guide/network_debug_troubleshooting.html <br />
+https://docs.ansible.com/ansible/latest/installation_guide/index.html <br />
 
 yarn ha configuration<br />
 https://hadoop.apache.org/docs/stable/hadoop-yarn/hadoop-yarn-site/ResourceManagerHA.html
