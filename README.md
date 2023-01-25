@@ -35,6 +35,10 @@ https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache
 https://www.databricks.com/session_eu19/performance-troubleshooting-using-apache-spark-metrics  InfluxDB/Grafana Integration 16:56 <br />
 https://www.youtube.com/watch?v=JlPu6FgHb0o <br />
 
+mointoring <br />
+https://github.com/LucaCanali/Miscellaneous <br />
+https://github.com/LucaCanali/Miscellaneous/blob/master/Spark_Notes/Spark_TaskMetrics.md  <br />
+
 Making Sense of Spark Performance - Kay Ousterhout (UC Berkeley) <br />
 https://www.youtube.com/watch?v=mBk4tt7AEHU <br />
 http://kayousterhout.org/ <br />
