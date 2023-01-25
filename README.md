@@ -3,6 +3,7 @@ apache spark notes <br />
 
 PySpark <br />
 https://spark.apache.org/docs/latest/api/python/user_guide/index.html <br />
+https://stackoverflow.com/questions/68249294/in-spark-what-is-the-meaning-of-spark-executor-pyspark-memory-configuration-opti <br />
 
 PySpark Internals <br />
 https://medium.com/@ketanvatsalya/a-scenic-route-through-pyspark-internals-feaf74ed660d <br />
