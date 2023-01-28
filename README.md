@@ -58,6 +58,7 @@ https://help.ubuntu.com/community/Xen  <br />
 
 apache hadoop + spark quick install <br />
 https://low-level.wiki/diverse/hadoop-setup.html<br />
+https://phoenixnap.com/kb/install-hadoop-ubuntu <br />
 
 apache hadoop ansible scripts<br />
 https://github.com/pippozq/hadoop-ansible <br />
