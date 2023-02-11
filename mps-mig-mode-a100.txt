@@ -4,6 +4,51 @@ https://www.youtube.com/watch?v=nYI0yt3Q82Y&list=PLcbxjEfgjpO8HFNS3SHeTCY9bz9SkM
 https://docs.nvidia.com/datacenter/testla/mig-user-guide
 https://github.com/aymericdamien/Tensorflow-Examples  Tensorflow Examples
 
+Step (0)
+
+Stop all running process using the GPU
+
+By default MIG mode is not enabled on the GPU
+
+$ nvidia-smi -i 0
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 450.80.02    Driver Version: 450.80.02    CUDA Version: 11.0     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|                               |                      |               MIG M. |
+|===============================+======================+======================|
+|   0  A100-SXM4-40GB      Off  | 00000000:36:00.0 Off |                    0 |
+| N/A   29C    P0    62W / 400W |      0MiB / 40537MiB |      6%      Default |
+|                               |                      |             Disabled |
++-------------------------------+----------------------+----------------------+
+
+MIG mode can be enabled on a GPU with the command
+
+$ sudo nvidia-smi -i 0 -mig 1
+Enabled MIG Mode for GPU 00000000:36:00.0
+All done.
+
+$ nvidia-smi -i 0 --query-gpu=pci.bus_id,mig.mode.current --format=csv
+pci.bus_id, mig.mode.current
+00000000:36:00.0, Enabled
+
+List all enabled MIG GPU devices
+
+$ nvidia-smi \
+--query-gpu=pci.bus_id,mig.mode.current \
+--format=csv
+pci.bus_id, mig.mode.current
+00000000:36:00.0, Enabled
+00000000:3B:00.0, Enabled
+00000000:41:00.0, Enabled
+00000000:45:00.0, Enabled
+00000000:59:00.0, Enabled
+00000000:5D:00.0, Enabled
+00000000:63:00.0, Enabled
+00000000:67:00.0, Enabled
+
+
 Step (1)
 
 $ nvidia-smi 
