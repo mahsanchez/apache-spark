@@ -20,7 +20,7 @@ $ nvidia-smi mig -i 0 -lgip
 GPU instance profiles:
 GPU     Name               ID    Instances    Memory         P2P     SM CE    DEC JPEG.  ENC OFA
                                  Free/Total   GiB.
-0	      MIG. 1g.5gb	       19	     7/7	      4.75		        No 	    14/1		0/0		      0/0
+0	      MIG. 1g.5gb	     19	     7/7	      4.75		        No 	    14/1		0/0		      0/0
 0	      MIG. 2g.10gb	     14	     3/3	      9.75		        No   	  28/2		1/0		      0/0
 0	      MIG. 3g.20gb	     9	     2/2	      19.62	          No     	42/3		2/0		      0/0
 0	      MIG. 4g.20gb	     5	     1/1	      19.62	          No 	    56/4		2/0		      0/0
