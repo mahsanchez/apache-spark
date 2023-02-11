@@ -62,14 +62,32 @@ For a specific GPU, pass its id with -i option for GPU 0 use. (what partitions I
 
 $ nvidia-smi mig -i 0 -lgip
 
-GPU instance profiles:
-GPU     Name               ID    Instances    Memory         P2P     SM CE    DEC JPEG.  ENC OFA 
-                                 Free/Total   GiB.
-0	      MIG. 1g.5gb	       19	       7/7	    4.75		        No 	    14/1		0/0		      0/0
-0	      MIG. 2g.10gb	     14	     3/3	      9.75		        No   	  28/2		1/0		      0/0
-0	      MIG. 3g.20gb	     9	     2/2	      19.62	          No     	42/3		2/0		      0/0
-0	      MIG. 4g.20gb	     5	     1/1	      19.62	          No 	    56/4		2/0		      0/0
-0	      MIG. 7g.40gb	     0	     1/1	      39.50	          No 	    98/7		5/1		      0/0
++-----------------------------------------------------------------------------+
+| GPU instance profiles:                                                      |
+| GPU   Name             ID    Instances   Memory     P2P    SM    DEC   ENC  |
+|                              Free/Total   GiB              CE    JPEG  OFA  |
+|=============================================================================|
+|   0  MIG 1g.5gb        19     7/7        4.75       No     14     0     0   |
+|                                                             1     0     0   |
++-----------------------------------------------------------------------------+
+|   0  MIG 1g.5gb+me     20     1/1        4.75       No     14     1     0   |
+|                                                             1     1     1   |
++-----------------------------------------------------------------------------+
+|   0  MIG 1g.10gb       15     4/4        9.62       No     14     1     0   |
+|                                                             1     0     0   |
++-----------------------------------------------------------------------------+
+|   0  MIG 2g.10gb       14     3/3        9.62       No     28     1     0   |
+|                                                             2     0     0   |
++-----------------------------------------------------------------------------+
+|   0  MIG 3g.20gb        9     2/2        19.50      No     42     2     0   |
+|                                                             3     0     0   |
++-----------------------------------------------------------------------------+
+|   0  MIG 4g.20gb        5     1/1        19.50      No     56     2     0   |
+|                                                             4     0     0   |
++-----------------------------------------------------------------------------+
+|   0  MIG 7g.40gb        0     1/1        39.25      No     98     5     0   |
+|                                                             7     1     1   |
++-----------------------------------------------------------------------------+
                                                                          
 Placements in how many ways you can split your gpu (See the placements choices use lgipp option
 
@@ -135,6 +153,10 @@ GPU 2: A100-SXM4-40GB (UUID: GPU-4fa5cf01-9520-1bc1-9956b-cc)
 GPU 3: A100-SXM4-40GB (UUID: GPU-acccf01-9520-1bc1-9956b-cc)
 GPU 4: A100-SXM4-40GB (UUID: GPU-999cf01-9520-1bc1-9956b-cc)
 
+NVIDIA_VISIBLE_DEVICES supports the following formats to specify MIG devices:
+MIG-<GPU-UUID>/<GPU instance ID>/<compute instance ID> when using R450 and R460 drivers or  MIG-<UUID> starting with R470 drivers.
+GPUDeviceIndex>:<MIGDeviceIndex>
+
 Use the UUID to CUDA_VISIBLE_DEVICES environment variables as CUDA_VISIBLE_DEVICES=UUID <application> &
 
 For example , to run two apps myapp1.py and myapp2.py
@@ -143,6 +165,12 @@ CUDA_VISIBLE_DEVICES=GPU-2fa5cf01-9520-1bc1-9956b-cc/1/0   myapp1.py &
 CUDA_VISIBLE_DEVICES=GPU-2fa5cf01-9520-1bc1-9956b-cc/2/0   myapp1.py &
 
 Verify if both are running on two instances with ‘nvidia-smi’ under the process tab
+
+Example pytorch
+
+sudo docker run --gpus '"device=0:1"' \
+    nvcr.io/nvidia/pytorch:20.11-py3 \
+    /bin/bash -c 'cd /opt/pytorch/examples/upstream/mnist && python main.py'
 
 $ nvidia-smi -i 0
 
