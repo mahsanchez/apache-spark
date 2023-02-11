@@ -13,18 +13,18 @@ To see the list of possible GPU instances, use (what partitions I can do)
 
 $ nvidia-smi mig -lgip
 
-For a specific GPU, pass its id with -I option for GPU 0 use. (what partitions I can do)
+For a specific GPU, pass its id with -i option for GPU 0 use. (what partitions I can do)
 
 $ nvidia-smi mig -i 0 -lgip
 
 GPU instance profiles:
-GPU Name               ID    Instances    Memory         P2P     SM CE    DEC JPEG.  ENC OFA
-                                        Free/Total     GiB.
-0	MIG. 1g.5gb	19	7/7	            4.75		  No 	        14/1		0/0		0/0
-0	MIG. 2g.10gb	14	3/3	            9.75		  No   	28/2		1/0		0/0
-0	MIG. 3g.20gb	 9	2/2	            19.62	           No 	42/3		2/0		0/0
-0	MIG. 4g.20gb	 5	1/1	            19.62	           No 	56/4		2/0		0/0
-0	MIG. 7g.40gb	 0	1/1	            39.50	           No 	98/7		5/1		0/0
+GPU     Name               ID    Instances    Memory         P2P     SM CE    DEC JPEG.  ENC OFA
+                                 Free/Total   GiB.
+0	      MIG. 1g.5gb	       19	     7/7	      4.75		        No 	    14/1		0/0		      0/0
+0	      MIG. 2g.10gb	     14	     3/3	      9.75		        No   	  28/2		1/0		      0/0
+0	      MIG. 3g.20gb	     9	     2/2	      19.62	          No     	42/3		2/0		      0/0
+0	      MIG. 4g.20gb	     5	     1/1	      19.62	          No 	    56/4		2/0		      0/0
+0	      MIG. 7g.40gb	     0	     1/1	      39.50	          No 	    98/7		5/1		      0/0
                                                                          
 Placements in how many ways you can split your gpu (See the placements choices use lgipp option
 
@@ -97,9 +97,9 @@ For example , to run two apps myapp1.py and myapp2.py
 CUDA_VISIBLE_DEVICES=GPU-2fa5cf01-9520-1bc1-9956b-cc/1/0   myapp1.py &
 CUDA_VISIBLE_DEVICES=GPU-2fa5cf01-9520-1bc1-9956b-cc/2/0   myapp1.py &
 
-Verify if both are running on two instances with ‘Nvidia-Smh’ under the process tab
+Verify if both are running on two instances with ‘nvidia-smi’ under the process tab
 
-$ nvidia-smi -I 0
+$ nvidia-smi -i 0
 
 Check under MIG devices and Process command output
 
