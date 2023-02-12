@@ -13,9 +13,9 @@ throughout your cluster or on a given node
 $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 
 Reference
+https://www.youtube.com/watch?v=xNY9cbaLuGk
 https://developer.nvidia.com/gtc/2020/video/s21975
 https://www.nvidia.com/en-us/on-demand/session/gtcfall20-a21657/
-https://www.youtube.com/watch?v=xNY9cbaLuGk
 https://www.youtube.com/watch?v=4ALztZDlkJ0
 
 https://github.com/aymericdamien/Tensorflow-Examples  Tensorflow Examples
