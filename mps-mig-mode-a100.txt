@@ -15,6 +15,7 @@ $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 Reference
 https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/
 https://developer.nvidia.com/blog/dividing-nvidia-a30-gpus-and-conquering-multiple-workloads/
+https://developer.nvidia.com/blog/minimizing-dl-inference-latency-with-mig/
 https://www.nvidia.com/en-us/on-demand/session/gtcfall20-a21657/
 https://developer.nvidia.com/gtc/2020/video/s21975
 https://www.youtube.com/watch?v=4ALztZDlkJ0
