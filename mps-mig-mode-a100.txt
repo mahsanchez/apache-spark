@@ -23,6 +23,8 @@ https://images.nvidia.com/aem-dam/en-zz/Solutions/data-center/nvidia-ampere-arch
 
 https://github.com/aymericdamien/Tensorflow-Examples  Tensorflow Examples
 
+Hands-On
+
 Step (0)
 
 Stop all running process using the GPU
