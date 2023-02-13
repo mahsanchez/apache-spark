@@ -32,7 +32,7 @@ Stop all running process using the GPU
 
 By default MIG mode is not enabled on the GPU
 
-$ nvidia-smi -i 0
+$ sudo nvidia-smi -i 0
 +-----------------------------------------------------------------------------+
 | NVIDIA-SMI 450.80.02    Driver Version: 450.80.02    CUDA Version: 11.0     |
 |-------------------------------+----------------------+----------------------+
@@ -51,13 +51,13 @@ $ sudo nvidia-smi -i 0 -mig 1
 Enabled MIG Mode for GPU 00000000:36:00.0
 All done.
 
-$ nvidia-smi -i 0 --query-gpu=pci.bus_id,mig.mode.current --format=csv
+$ sudo nvidia-smi -i 0 --query-gpu=pci.bus_id,mig.mode.current --format=csv
 pci.bus_id, mig.mode.current
 00000000:36:00.0, Enabled
 
 List all enabled MIG GPU devices
 
-$ nvidia-smi \
+$ sudo nvidia-smi \
 --query-gpu=pci.bus_id,mig.mode.current \
 --format=csv
 pci.bus_id, mig.mode.current
@@ -73,16 +73,16 @@ pci.bus_id, mig.mode.current
 
 Step (1)
 
-$ nvidia-smi 
+$ sudo nvidia-smi 
 
 Check if MIG mode is enabled with Nvidia-Smh this should list the GPUs followed by a table of MIG devices.
 To see the list of possible GPU instances, use (what partitions I can do)
 
-$ nvidia-smi mig -lgip
+$ sudo nvidia-smi mig -lgip
 
 For a specific GPU, pass its id with -i option for GPU 0 use. (what partitions I can do)
 
-$ nvidia-smi mig -i 0 -lgip
+$ sudo nvidia-smi mig -i 0 -lgip
 
 +-----------------------------------------------------------------------------+
 | GPU instance profiles:                                                      |
@@ -113,7 +113,7 @@ $ nvidia-smi mig -i 0 -lgip
                                                                          
 Placements in how many ways you can split your gpu (See the placements choices use lgipp option
 
-$ nvidia-smi mig -i 0 -lgipp
+$ sudo nvidia-smi mig -i 0 -lgipp
 
 GPU 0 Profile ID 19 Placements: {0, 1,2, 3, 4, 5, 6}:1
 GPU 0 Profile ID 14 Placements: {0,2,4}:2
@@ -127,14 +127,14 @@ Create GPU Instances (GI) with ‘cgi’ option, for example, to split GPU 0 int
 Where the parameter to create GPU instance ‘cgi’ is the gpu instance profile id in column 3 above. The name of the instance like
 ‘MIG 3g.20gb’ can also be used instead. The parameter ‘cgi’ can be used to list the list of GPU instances
 
-$ nvidia-smi mig -i 0 -cgi 9,9
+$ sudo nvidia-smi mig -i 0 -cgi 9,9
 
 Successfully created GPU instance on GPU 0 using profile 1
 Successfully created GPU instance on GPU 0 using profile 1
 
 Now list the gpu instances
 
-$ nvidia-smi mig  -i 0 -lgi
+$ sudo nvidia-smi mig  -i 0 -lgi
 
 GPU instances:
 GPU    Name                 Profile ID       Instance ID        Placement Start:Size
@@ -143,17 +143,17 @@ GPU    Name                 Profile ID       Instance ID        Placement Start:
 
 Next create Compute Instance (CI) with ‘cci’ parameter for each GPU instance
 
-$ nvidia-smi mig -i 0 -gi 1 -cci 0
+$ sudo nvidia-smi mig -i 0 -gi 1 -cci 0
 
 Successfully created compute instance on GPU 0 GPU instance ID 1 using profile ID 0
 
-$ nvidia-smi mig -i 0 -gi 2 -cci 0
+$ sudo nvidia-smi mig -i 0 -gi 2 -cci 0
 
 Successfully created compute instance on GPU 0 GPU instance ID 2 using profile ID 0
 
 Verify if the compute instances are created with ‘ice’ option
 
-$ nvidia-smi mig -i 0 -lci
+$ sudo nvidia-smi mig -i 0 -lci
 
 Compute instances:
 GPU         GPU instance   Name                     Profile ID    Instance ID
@@ -165,7 +165,7 @@ Step (3)
 To un the codes in MIG mode, et the Unique ID for eachh MIG device with “-L” option to .nvidia-smi. The new format follows
 This convention:  MIG-<GPU-UUID>/<GPU instance ID>/<compute instance ID>
 
-$ nvidia-smi -L
+$ sudo nvidia-smi -L
 
 GPU 0: A100-SXM4-40GB (UUID: GPU-2fa5cf01-9520-1bc1-9956b-cc)
       MIG 1c.3g.20gb Device 0: (UUID: GPU-2fa5cf01-9520-1bc1-9956b-cc/1/0)
@@ -194,7 +194,7 @@ sudo docker run --gpus '"device=0:1"' \
     nvcr.io/nvidia/pytorch:20.11-py3 \
     /bin/bash -c 'cd /opt/pytorch/examples/upstream/mnist && python main.py'
 
-$ nvidia-smi -i 0
+$ sudo nvidia-smi -i 0
 
 Check under MIG devices and Process command output
 
@@ -202,14 +202,14 @@ Step (4)
 
 To destroy the instances, first start with compute instances (CI) then GPU instances (GI)
 
-$ nvidia-smi mig -i 0 -gi 1 -dci
+$ sudo nvidia-smi mig -i 0 -gi 1 -dci
 
 Successfully destroyed compute instance on GPU 0 GPU instance ID 1 using profile ID 0
 
-$ nvidia-smi mig -i 0 -gi 2 -dci
+$ sudo nvidia-smi mig -i 0 -gi 2 -dci
 
 Successfully destroyed compute instance on GPU 0 GPU instance ID 2 using profile ID 0
 
-$ nvidia-smi -i 0
+$ sudo nvidia-smi -i 0
 
 MIG devices should not appear anymore on device 0
