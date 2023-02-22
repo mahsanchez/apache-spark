@@ -210,6 +210,12 @@ $ sudo nvidia-smi mig -i 0 -gi 2 -dci
 
 Successfully destroyed compute instance on GPU 0 GPU instance ID 2 using profile ID 0
 
+If the intention is to destroy all the CIs and GIs, then this can be accomplished with the following commands:
+
+$ sudo nvidia-smi mig -dci && sudo nvidia-smi mig -dgi
+
+Verify all List MIG devices are deleted
+
 $ sudo nvidia-smi -i 0
 
 MIG devices should not appear anymore on device 0
