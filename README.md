@@ -1,6 +1,9 @@
 # apache-spark
 apache spark notes <br />
 
+NVIDIA MIG (Multi-Instance GPUs)
+https://github.com/mahsanchez/apache-spark/blob/main/mps-mig-mode-a100.txt
+
 PySpark <br />
 https://spark.apache.org/docs/latest/api/python/user_guide/index.html <br />
 https://stackoverflow.com/questions/68249294/in-spark-what-is-the-meaning-of-spark-executor-pyspark-memory-configuration-opti <br />
