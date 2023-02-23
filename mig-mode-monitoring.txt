@@ -68,22 +68,22 @@ $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 // stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE = 525 ) metrics with dcgmi dmon, group number appear   
 $ dcgmi dmon -e 525 -g 8
 
-Entity  GRACT  TENSO
+Entity  VMUSG  
       Id
-    GPU 0  0.000  0.000
-  GPU-I 0  0.000  0.000
-  GPU-I 1  0.000  0.000
-    GPU 0  0.000  0.000
-  GPU-I 0  0.000  0.000
-  GPU-I 1  0.000  0.000
-    GPU 0  0.457  0.442
-  GPU-I 0  0.534  0.516
-  GPU-I 1  0.533  0.515
-    GPU 0  0.845  0.816
-  GPU-I 0  0.986  0.953
-  GPU-I 1  0.985  0.952
-    GPU 0  0.846  0.817
-  GPU-I 0  0.987  0.953
+    GPU 0  0.000 
+  GPU-I 0  0.000 
+  GPU-I 1  0.000  
+    GPU 0  0.000  
+  GPU-I 0  0.000 
+  GPU-I 1  0.000  
+    GPU 0  0.457  
+  GPU-I 0  0.534 
+  GPU-I 1  0.533  
+    GPU 0  0.845  
+  GPU-I 0  0.986  
+  GPU-I 1  0.985 
+    GPU 0  0.846  
+  GPU-I 0  0.987  
 
 // stream (DCGM_FI_DEV_VGPU_MEMORY_USAGE, SM Occupancy, SM Activity )  metrics with dcgmi dmon
 $ dcgmi dmon -e 525,1003,1002 -g 8
