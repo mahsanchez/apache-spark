@@ -1,7 +1,8 @@
 Monitor
 DCGM can get utilization metrics of mig device according to nv.
 
-// Install dcgmi
+// Install dcgmi as documented at https://github.com/NVIDIA/DCGM
+
 $ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
 $ sudo dpkg -i cuda-keyring_1.0-1_all.deb
 $ sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
@@ -23,8 +24,8 @@ $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 // stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon
 $ dcgmi dmon -e 525 -g 8
 
-// stream (SM Occupancy, SM Activity, DCGM_FI_DEV_VGPU_MEMORY_USAGE)  metrics with dcgmi dmon
-$ dcgmi dmon -e 1003,1002,525  -g 8
+// stream (DCGM_FI_DEV_VGPU_MEMORY_USAGE, SM Occupancy, SM Activity )  metrics with dcgmi dmon
+$ dcgmi dmon -e 525, 1003,1002 -g 8
 
 // the total gpu utilization depends on the defined partitions
 $ sudo nvidia-smi mig -lgip
