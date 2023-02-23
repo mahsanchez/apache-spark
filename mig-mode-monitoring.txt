@@ -1,9 +1,12 @@
 Monitor
 DCGM can get utilization metrics of mig device according to nv.
 
-https://github.com/NVIDIA/DCGM
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
-https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
+// Install dcgmi
+$ wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/cuda-keyring_1.0-1_all.deb
+$ sudo dpkg -i cuda-keyring_1.0-1_all.deb
+$ sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2004/x86_64/ /"
+$ sudo apt-get update     && sudo apt-get install -y datacenter-gpu-manager
+$ sudo systemctl --now enable nvidia-dcgm
 
 // Discover MIG devices
 $ dcgmi discovery -c
@@ -33,3 +36,6 @@ Reference
 https://github.com/NVIDIA/DCGM
 https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
 https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
+https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
