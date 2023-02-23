@@ -12,40 +12,6 @@ throughout your cluster or on a given node
 
 $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 
-Monitor
-DCGM can get utilization metrics of mig device according to nv.
-
-https://github.com/NVIDIA/DCGM
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
-https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
-
-// Discover MIG devices
-$ dcgmi discovery -c
-
-//we will add the GPU and the two GPU Instances (using entity IDs 0 and 1) to the group:
-$ dcgmi group -c mig-ex1 -a 0,i:0,i:1
-
-// list the devices in the group
-$  dcgmi group -l
-
-// run a workload
-$ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
-
-// stream metrics with dcgmi dmon
-$ dcgmi dmon -e 1001,1004 -g 8
-$ dcgmi dmon -e 525 -g 8
-
-// the total gpu utilization depends on the defined partitions
-$ sudo nvidia-smi mig -lgip
-
-// Standalone GPU Devices (No MIG)
-$ dcgmi discovery --host 127.0.0.1 -l
-$ dcgmi dmon -e 525
-
-Monitor Reference
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
-https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
 
 Reference
 https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/
