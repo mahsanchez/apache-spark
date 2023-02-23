@@ -12,7 +12,7 @@ $ sudo systemctl --now enable nvidia-dcgm
 // Discover MIG devices
 $ dcgmi discovery -c
 
-//we will add the GPU and the two GPU Instances (using entity IDs 0 and 1) to the group:
+//we will add the GPU 0 and the two GPU Instances (using entity IDs 0 and 1) to the group:
 $ dcgmi group -c mig-ex1 -a 0,i:0,i:1
 
 // list the devices in the group
