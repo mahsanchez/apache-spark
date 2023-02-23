@@ -3,6 +3,7 @@ apache spark notes <br />
 
 NVIDIA MIG (Multi-Instance GPUs) <br />
 https://github.com/mahsanchez/apache-spark/blob/main/mps-mig-mode-a100.txt  <br />
+https://github.com/mahsanchez/apache-spark/blob/main/mig-mode-monitoring.txt  <br />
 
 PySpark <br />
 https://spark.apache.org/docs/latest/api/python/user_guide/index.html <br />
