@@ -36,8 +36,7 @@ $ dcgmi dmon -e 525
 
 Reference
 https://github.com/NVIDIA/DCGM
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
 https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
 https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
 https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
