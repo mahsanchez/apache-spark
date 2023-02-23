@@ -16,6 +16,7 @@ Monitor
 DCGM can get utilization metrics of mig device according to nv.
 https://github.com/NVIDIA/DCGM
 https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
 https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
 
 # dcgmi discovery -c
