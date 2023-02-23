@@ -13,9 +13,19 @@ throughout your cluster or on a given node
 $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 
 Monitor
+DCGM can get utilization metrics of mig device according to nv.
+https://github.com/NVIDIA/DCGM
 https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
-When a card is in mig mode, then dcgm is needed to capture the metrics.
-When a card is not in mig mode, then you can use nvidia-smi or nvml sdk to get metrics.
+
+# dcgmi discovery -c
+.....
+| -> I 6/0          | GPU Instance (EntityID: 42)                                        |
+|    -> CI 6/0/0    | Compute Instance (EntityID: 42)                                    |
+|    -> CI 6/0/1    | Compute Instance (EntityID: 43)  
+|
+# dcgmi group -g 4 -a  compute_instance:42
+# dcgmi dmon -e 203 -g 4
+
 
 Reference
 https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/
