@@ -12,6 +12,11 @@ throughout your cluster or on a given node
 
 $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 
+Monitor
+https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
+When a card is in mig mode, then dcgm is needed to capture the metrics.
+When a card is not in mig mode, then you can use nvidia-smi or nvml sdk to get metrics.
+
 Reference
 https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/
 https://developer.nvidia.com/blog/dividing-nvidia-a30-gpus-and-conquering-multiple-workloads/
