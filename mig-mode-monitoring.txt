@@ -20,9 +20,11 @@ $  dcgmi group -l
 // run a workload
 $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 
-// stream metrics with dcgmi dmon
-$ dcgmi dmon -e 1001,1004 -g 8
+// stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon
 $ dcgmi dmon -e 525 -g 8
+
+// stream (SM Occupancy, SM Activity, DCGM_FI_DEV_VGPU_MEMORY_USAGE)  metrics with dcgmi dmon
+$ dcgmi dmon -e 1003,1002,525  -g 8
 
 // the total gpu utilization depends on the defined partitions
 $ sudo nvidia-smi mig -lgip
