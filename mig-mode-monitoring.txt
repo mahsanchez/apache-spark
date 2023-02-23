@@ -21,8 +21,6 @@ $  dcgmi group -l
 // run a workload
 $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 
-// All Monitoring metrics are documented at https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
-
 // stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon
 $ dcgmi dmon -e 525 -g 8
 
@@ -31,6 +29,8 @@ $ dcgmi dmon -e 525,1003,1002 -g 8
 
 // the total gpu utilization depends on the defined partitions
 $ sudo nvidia-smi mig -lgip
+
+// More Monitoring metrics can be found at https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
 
 // Standalone GPU Devices (No MIG)
 $ dcgmi discovery --host 127.0.0.1 -l
