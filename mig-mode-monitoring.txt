@@ -9,20 +9,81 @@ $ sudo add-apt-repository "deb https://developer.download.nvidia.com/compute/cud
 $ sudo apt-get update && sudo apt-get install -y datacenter-gpu-manager
 $ sudo systemctl --now enable nvidia-dcgm
 
+// Create MIG groups
+$ sudo nvidia-smi mig -cgi 9,9 -C
+
+...
++-----------------------------------------------------------------------------+
+| MIG devices:                                                                |
++------------------+----------------------+-----------+-----------------------+
+| GPU  GI  CI  MIG |         Memory-Usage |        Vol|         Shared        |
+|      ID  ID  Dev |           BAR1-Usage | SM     Unc| CE  ENC  DEC  OFA  JPG|
+|                  |                      |        ECC|                       |
+|==================+======================+===========+=======================|
+|  0    1   0   0  |     11MiB / 20096MiB | 42      0 |  3   0    2    0    0 |
+|                  |      0MiB / 32767MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+|  0    2   0   1  |     11MiB / 20096MiB | 42      0 |  3   0    2    0    0 |
+|                  |      0MiB / 32767MiB |           |                       |
++------------------+----------------------+-----------+-----------------------+
+
 // Discover MIG devices
 $ dcgmi discovery -c
+
++-------------------+--------------------------------------------------------------------+
+| Instance Hierarchy                                                                     |
++===================+====================================================================+
+| GPU 0             | GPU GPU-5fd15f35-e148-2992-4ecb-9825e534f253 (EntityID: 0)         |
+| -> I 0/1          | GPU Instance (EntityID: 0)                                         |
+|    -> CI 0/1/0    | Compute Instance (EntityID: 0)                                     |
+| -> I 0/2          | GPU Instance (EntityID: 1)                                         |
+|    -> CI 0/2/0    | Compute Instance (EntityID: 1)                                     |
++-------------------+--------------------------------------------------------------------+
 
 //we will add the GPU 0 and the two GPU Instances (using entity IDs 0 and 1) to the group:
 $ dcgmi group -c mig-ex1 -a 0,i:0,i:1
 
-// list the devices in the group
+Successfully created group "mig-ex1" with a group ID of 8
+Specified entity ID is valid but unknown: i:0. ParsedResult: ParsedGpu(i:0)
+Specified entity ID is valid but unknown: i:1. ParsedResult: ParsedGpu(i:1)
+Add to group operation successful.
+
+// list the devices in the group 
 $  dcgmi group -l
+
++-------------------+----------------------------------------------------------+
+| GROUPS                                                                       |
+| 1 group found.                                                               |
++===================+==========================================================+
+| Groups            |                                                          |
+| -> 8              |                                                          |
+|    -> Group ID    | 8                                                        |
+|    -> Group Name  | mig-ex1                                                  |
+|    -> Entities    | GPU 0, GPU_I 0, GPU_I 1                                  |
++-------------------+----------------------------------------------------------+
 
 // run a workload
 $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 
-// stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon
+// stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon, group number appear   
 $ dcgmi dmon -e 525 -g 8
+
+Entity  GRACT  TENSO
+      Id
+    GPU 0  0.000  0.000
+  GPU-I 0  0.000  0.000
+  GPU-I 1  0.000  0.000
+    GPU 0  0.000  0.000
+  GPU-I 0  0.000  0.000
+  GPU-I 1  0.000  0.000
+    GPU 0  0.457  0.442
+  GPU-I 0  0.534  0.516
+  GPU-I 1  0.533  0.515
+    GPU 0  0.845  0.816
+  GPU-I 0  0.986  0.953
+  GPU-I 1  0.985  0.952
+    GPU 0  0.846  0.817
+  GPU-I 0  0.987  0.953
 
 // stream (DCGM_FI_DEV_VGPU_MEMORY_USAGE, SM Occupancy, SM Activity )  metrics with dcgmi dmon
 $ dcgmi dmon -e 525,1003,1002 -g 8
