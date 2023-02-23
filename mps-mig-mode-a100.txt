@@ -14,11 +14,12 @@ $ nvidia-mig-parted apply -f config.yaml -c all-2g.10gb
 
 Monitor
 DCGM can get utilization metrics of mig device according to nv.
+
 https://github.com/NVIDIA/DCGM
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
-https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
 https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
-https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
+
+# dcgmi discovery --host 127.0.0.1 -l
+# dcgmi dmon -e 525
 
 # dcgmi discovery -c
 .....
@@ -26,9 +27,13 @@ https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
 |    -> CI 6/0/0    | Compute Instance (EntityID: 42)                                    |
 |    -> CI 6/0/1    | Compute Instance (EntityID: 43)  
 |
-# dcgmi group -g 4 -a  compute_instance:42
+# dcgmi group -g 4 -a compute_instance:42
 # dcgmi dmon -e 525 -g 4
 
+Monitor Reference
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
+https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
 
 Reference
 https://developer.nvidia.com/blog/getting-the-most-out-of-the-a100-gpu-with-multi-instance-gpu/
