@@ -27,3 +27,9 @@ $ sudo nvidia-smi mig -lgip
 // Standalone GPU Devices (No MIG)
 $ dcgmi discovery --host 127.0.0.1 -l
 $ dcgmi dmon -e 525
+
+
+Reference
+https://github.com/NVIDIA/DCGM
+https://docs.nvidia.com/datacenter/dcgm/latest/user-guide/feature-overview.html#profiling-metrics
+https://docs.nvidia.com/datacenter/dcgm/1.7/dcgm-api/group__dcgmFieldIdentifiers.html
