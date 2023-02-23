@@ -65,7 +65,7 @@ $  dcgmi group -l
 // run a workload
 $ sudo dcgmproftester11 --no-dcgm-validation -t 1004 -d 120
 
-// stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE ) metrics with dcgmi dmon, group number appear   
+// stream Memory Utilization ( DCGM_FI_DEV_VGPU_MEMORY_USAGE = 525 ) metrics with dcgmi dmon, group number appear   
 $ dcgmi dmon -e 525 -g 8
 
 Entity  GRACT  TENSO
