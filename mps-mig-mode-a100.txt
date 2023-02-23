@@ -27,7 +27,7 @@ https://github.com/NVIDIA/gpu-monitoring-tools/issues/151
 |    -> CI 6/0/1    | Compute Instance (EntityID: 43)  
 |
 # dcgmi group -g 4 -a  compute_instance:42
-# dcgmi dmon -e 203 -g 4
+# dcgmi dmon -e 525 -g 4
 
 
 Reference
