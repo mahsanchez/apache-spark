@@ -1,0 +1,46 @@
+GPU CPU Affinity
+
+How to change CPU affinity with nvidia-smi topo
+
+Understanding NVIDIA SMI topology output.  nvidia-smi topo -m
+https://stackoverflow.com/questions/55364149/understanding-nvidia-smi-topo-m-output
+https://gist.github.com/ashwin/e139748bdba15f5af63f0146d01ee4c3
+https://www.google.com/search?q=nvidia-smi+topo&rlz=1C5CHFA_enGB892GB892&oq=nvidia-smi+topo&aqs=chrome.0.0i512l2j0i22i30l6j0i390l2.3315j0j15&sourceid=chrome&ie=UTF-8
+http://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
+https://on-demand.gputechconf.com/gtc-cn/2019/pdf/CN9951/presentation.pdf
+
+MPS and MIG
+https://developer.nvidia.com/blog/maximizing-gromacs-throughput-with-multiple-simulations-per-gpu-using-mps-and-mig/
+
+FP16 / FP 32 / Tensor Float / Mixed Precision
+https://blogs.nvidia.com/blog/2020/05/14/tensorfloat-32-precision-format/
+
+CPU GPU Affinity script 
+
+#!/bin/bash
+
+case ${SLURM_LOCALID} in
+  0)
+       export CUDA_VISIBLE_DEVICES=0
+       CPU_BIND=0-63
+       ;;
+   1)
+       export CUDA_VISIBLE_DEVICES=1
+       CPU_BIND=0-63
+       ;;
+   2)
+       export CUDA_VISIBLE_DEVICES=2
+       CPU_BIND=64-127
+       ;;
+   3)
+       export CUDA_VISIBLE_DEVICES=3
+       CPU_BIND=64-127
+       ;;
+esac
+
+if [[ ${SLURM_LOCALID} == 0 ]]; then
+        nsys profile --trace=cuda,nvtx,mpi --cuda-memory-usage=true
+numactl --physcpubind=${CPU_BIND} $*
+else
+        numactl --physcpubind=${CPU_BIND} $*
+fi
