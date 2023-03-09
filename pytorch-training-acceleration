@@ -1,0 +1,20 @@
+https://www.reddit.com/r/MachineLearning/comments/kvs1ex/d_here_are_17_ways_of_making_pytorch_training/
+https://efficientdl.com/faster-deep-learning-in-pytorch-a-guide/
+
+Consider using a different learning rate schedule.
+Use multiple workers and pinned memory in DataLoader.
+Max out the batch size.
+Use Automatic Mixed Precision (AMP).
+Consider using a different optimizer.
+Turn on cudNN benchmarking.
+Beware of frequently transferring data between CPUs and GPUs.
+Use gradient/activation checkpointing.
+Use gradient accumulation.
+Use DistributedDataParallel for multi-GPU training.
+Set gradients to None rather than 0.
+Use .as_tensor rather than .tensor()
+Turn off debugging APIs if not needed.
+Use gradient clipping.
+Turn off bias before BatchNorm.
+Turn off gradient computation during validation.
+Use input and batch normalization.
