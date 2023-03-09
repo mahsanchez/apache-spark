@@ -11,6 +11,7 @@ https://www.google.com/search?q=nvidia-smi+topo&rlz=1C5CHFA_enGB892GB892&oq=nvid
 http://developer.download.nvidia.com/compute/DCGM/docs/nvidia-smi-367.38.pdf
 https://on-demand.gputechconf.com/gtc-cn/2019/pdf/CN9951/presentation.pdf
 https://arxiv.org/pdf/1903.04611.pdf Evaluating Modern GPU Interconnect
+https://developer.nvidia.com/blog/nvidia-ampere-architecture-in-depth/
 
 MPS and MIG
 https://developer.nvidia.com/blog/maximizing-gromacs-throughput-with-multiple-simulations-per-gpu-using-mps-and-mig/
