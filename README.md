@@ -4,6 +4,7 @@ apache spark notes <br />
 NVIDIA MIG (Multi-Instance GPUs) <br />
 https://github.com/mahsanchez/apache-spark/blob/main/mps-mig-mode-a100.txt  <br />
 https://github.com/mahsanchez/apache-spark/blob/main/mig-mode-monitoring.txt  <br />
+https://github.com/mahsanchez/apache-spark/blob/main/mig-mode-monitoring.txt  <br />
 https://developer.nvidia.com/blog/maximizing-gromacs-throughput-with-multiple-simulations-per-gpu-using-mps-and-mig/ <br />
 
 PySpark <br />
