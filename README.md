@@ -6,7 +6,6 @@ https://github.com/mahsanchez/apache-spark/blob/main/mps-mig-mode-a100.txt  <br 
 https://github.com/mahsanchez/apache-spark/blob/main/mig-mode-monitoring.txt  <br />
 https://github.com/mahsanchez/apache-spark/blob/main/mig-cpu-affinity-tf32-a100  <br />
 https://developer.nvidia.com/blog/maximizing-gromacs-throughput-with-multiple-simulations-per-gpu-using-mps-and-mig/ <br />
-https://codeyarns.com/tech/2020-12-15-how-to-use-mig.html#gsc.tab=0  <br />
 
 PySpark <br />
 https://spark.apache.org/docs/latest/api/python/user_guide/index.html <br />
