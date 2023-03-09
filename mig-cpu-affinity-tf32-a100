@@ -12,6 +12,7 @@ https://arxiv.org/pdf/1903.04611.pdf Evaluating Modern GPU Interconnect
 
 MPS and MIG
 https://developer.nvidia.com/blog/maximizing-gromacs-throughput-with-multiple-simulations-per-gpu-using-mps-and-mig/
+https://codeyarns.com/tech/2020-12-15-how-to-use-mig.html#gsc.tab=0
 
 FP16 / FP 32 / Tensor Float / Mixed Precision
 https://blogs.nvidia.com/blog/2020/05/14/tensorfloat-32-precision-format/
